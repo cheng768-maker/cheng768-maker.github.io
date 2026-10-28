@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cheng Yanhao · 营销与内容创作作品集</title>
+  <meta name="description" content="成彦好的个人作品集 · Marketing / Content / Social Media 方向" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&family=Noto+Sans+SC:wght@300;400;500;700;900&family=Kalam&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- 背景动效层 -->
+  <canvas id="bg-canvas"></canvas>
+  <div class="glow glow-a"></div>
+  <div class="glow glow-b"></div>
+  <div class="grain"></div>
+
+  <!-- 导航 -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#home" class="logo">
+        <span class="logo-mark">CY</span>
+        <span class="logo-text">Yanhao<span class="logo-dot">.</span></span>
+      </a>
+      <nav class="nav-links">
+        <a href="#about" class="nav-link"><span>01</span>About</a>
+        <a href="#cases" class="nav-link"><span>02</span>Cases</a>
+        <a href="#video" class="nav-link"><span>03</span>Video</a>
+        <a href="#skills" class="nav-link"><span>04</span>Skills</a>
+        <a href="#journey" class="nav-link"><span>05</span>Journey</a>
+        <a href="#contact" class="nav-link cta"><span>06</span>Hire Me</a>
+      </nav>
+      <button class="menu-btn" id="menuBtn" aria-label="菜单">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-grid">
+      <div class="hero-left">
+        <div class="eyebrow reveal">
+          <span class="dot"></span> Available for Marketing Internship · 2026
+        </div>
+        <h1 class="hero-title">
+          <span class="line reveal">Hi, I'm <em>Yanhao</em> 👋</span>
+          <span class="line reveal">I make ideas go</span>
+          <span class="line reveal"><span class="gradient-text" data-text="viral —">viral —</span> then prove it.</span>
+        </h1>
+        <p class="hero-sub reveal">
+          🎬 戏剧导演的脑 + 📈 操盘手的手 =
+          能自己写脚本、能自己剪、能自己上镜、也能拿着数据复盘的人。
+          <br/><strong>一个不是模板的 Marketing 候选人。</strong>
+        </p>
+        <div class="hero-actions reveal">
+          <a href="#video" class="btn btn-primary">看我的爆款脚本 ↓</a>
+          <a href="#cases" class="btn btn-ghost">项目经历 →</a>
+        </div>
+        <div class="hero-meta reveal">
+          <div class="meta-item"><b>5000+</b><small>抖音涨粉 / 3 个月</small></div>
+          <div class="meta-item"><b>20+</b><small>活动 · 零客诉</small></div>
+          <div class="meta-item"><b>3+</b><small>原创带货剧本</small></div>
+        </div>
+      </div>
+      <div class="hero-right reveal">
+        <div class="orbit" id="orbit">
+          <div class="orbit-core" id="orbitCore">
+            <span class="core-label">能出镜</span>
+            <small>click to split</small>
+          </div>
+          <div class="orbit-ring r1"></div>
+          <div class="orbit-ring r2"></div>
+          <div class="orbit-ring r3"></div>
+          <!-- chips 由 JS 根据 data.js → capabilities 渲染 -->
+        </div>
+        <div class="orbit-hint" id="orbitHint">
+          <span class="hint-line"></span>
+          <p>点击中心球，<b>6 大能力会分裂散开</b>；再点一次收回。也可以直接点任意一个标签看它能做什么。</p>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-num">01</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-bio reveal">
+          <p class="lead">
+            我是一个<strong>不太像"标准营销人"的营销人</strong>——戏剧影视科班出身，
+            会写、会导、会上镜，也懂怎么让内容被算法和观众同时买单。
+          </p>
+          <p>
+            别人负责"传播策略"这四个字，我负责<strong>从一句洞察到一条成片</strong>的完整链路：
+            选题、脚本、拍摄、剪辑、发布、数据复盘、迭代选题——我全都能自己做。
+          </p>
+          <p>
+            三段实习 + 三年舞台经验打磨下来，我最大的特点是：
+            <strong>既能钻到细节里抠一个钩子镜头，也能站在高处讲清整条内容策略。</strong>
+          </p>
+          <div class="quote-badge">
+            <span class="qmark">"</span>
+            <span>戏剧给我讲故事的本能，运营给我验证故事的标尺。</span>
+          </div>
+        </div>
+        <div class="about-cards">
+          <div class="mini-card reveal">
+            <span class="mini-icon">🎓</span>
+            <h4>MA · 国际传播学</h4>
+            <p>宁波诺丁汉大学<br/>2026.09 – 2027.11</p>
+          </div>
+          <div class="mini-card reveal">
+            <span class="mini-icon">🎭</span>
+            <h4>BA · 戏剧影视文学</h4>
+            <p>西南石油大学 · GPA 3.6/4<br/>专业前 10%</p>
+          </div>
+          <div class="mini-card reveal">
+            <span class="mini-icon">🧠</span>
+            <h4>ENTJ · 天生的推动者</h4>
+            <p>跨部门协同<br/>突发情况处置</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cases -->
+  <section class="section section-alt" id="cases">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-num">02</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Cases</span></h2>
+        <p class="section-desc">三段真实经历，按「背景 → 洞察 → 执行 → 结果」拆解。点击卡片展开完整细节。</p>
+      </div>
+      <div class="cases" id="casesList"><!-- 由 JS 渲染 --></div>
+    </div>
+  </section>
+
+  <!-- Video / 脚本 & 成片 -->
+  <section class="section" id="video">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-num">03</span>
+        <h2 class="section-title">Content <span class="gradient-text">in Action</span></h2>
+        <p class="section-desc">
+          不只是"运营过账号"——这是我从 0 到 1 写的脚本，和最终成片的对照。
+          可以看我怎么把一句洞察，变成一个能拍、能卖、能数据化的镜头方案。
+        </p>
+      </div>
+      <div class="video-tabs" id="videoTabs"><!-- 由 JS 渲染 --></div>
+      <div class="video-panels" id="videoPanels"><!-- 由 JS 渲染 --></div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-num">04</span>
+        <h2 class="section-title">Skills &amp; <span class="gradient-text">Tools</span></h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-bars reveal">
+          <div class="skill-bar"><div class="bar-head"><span>内容策划 / Content</span><b>90%</b></div><div class="bar-track"><i style="width:90%"></i></div></div>
+          <div class="skill-bar"><div class="bar-head"><span>短视频脚本 / Scriptwriting</span><b>92%</b></div><div class="bar-track"><i style="width:92%"></i></div></div>
+          <div class="skill-bar"><div class="bar-head"><span>社媒运营 / Social Ops</span><b>85%</b></div><div class="bar-track"><i style="width:85%"></i></div></div>
+          <div class="skill-bar"><div class="bar-head"><span>公关活动执行 / PR Event</span><b>88%</b></div><div class="bar-track"><i style="width:88%"></i></div></div>
+          <div class="skill-bar"><div class="bar-head"><span>视频剪辑 / CapCut</span><b>80%</b></div><div class="bar-track"><i style="width:80%"></i></div></div>
+          <div class="skill-bar"><div class="bar-head"><span>数据分析 / Analytics</span><b>75%</b></div><div class="bar-track"><i style="width:75%"></i></div></div>
+        </div>
+        <div class="skill-cloud reveal">
+          <span class="tag t-lg">Douyin / 抖音</span>
+          <span class="tag">Xiaohongshu</span>
+          <span class="tag">WeChat OA</span>
+          <span class="tag t-lg">CapCut</span>
+          <span class="tag">Canva</span>
+          <span class="tag">Photoshop</span>
+          <span class="tag">Premiere</span>
+          <span class="tag t-lg">脚本写作</span>
+          <span class="tag">出镜主持</span>
+          <span class="tag">分镜设计</span>
+          <span class="tag">SWOT / STP</span>
+          <span class="tag">Hootsuite</span>
+          <span class="tag t-sm">Google Analytics</span>
+          <span class="tag t-sm">Excel</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Journey -->
+  <section class="section" id="journey">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-num">05</span>
+        <h2 class="section-title">My <span class="gradient-text">Journey</span></h2>
+      </div>
+      <div class="timeline" id="timeline"><!-- 由 JS 渲染 --></div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="section-head center">
+        <span class="section-num">06</span>
+        <h2 class="section-title">Let's <span class="gradient-text">make something</span> go viral.</h2>
+        <p class="section-desc">正在寻找 Marketing / Content / Social Media 方向的实习机会。如果你在做有意思的传播项目，我很乐意聊聊。</p>
+      </div>
+      <div class="contact-grid">
+        <a class="contact-card reveal" href="mailto:cyh003410@outlook.com">
+          <span class="contact-icon">📧</span>
+          <div><small>Email</small><b>cyh003410@outlook.com</b></div>
+        </a>
+        <div class="contact-card reveal">
+          <span class="contact-icon">📱</span>
+          <div><small>Phone</small><b>137 0358 4050</b></div>
+        </div>
+        <div class="contact-card reveal">
+          <span class="contact-icon">📍</span>
+          <div><small>Based in</small><b>Ningbo, China</b></div>
+        </div>
+        <div class="contact-card reveal">
+          <span class="contact-icon">🔗</span>
+          <div><small>LinkedIn</small><b>add-your-link</b></div>
+        </div>
+      </div>
+      <div class="footer-note reveal">
+        <p>© <span id="year"></span> Cheng Yanhao · 纯手写 HTML / CSS / JS · 部署于 GitHub Pages</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 回到顶部 -->
+  <button class="top-btn" id="topBtn" aria-label="回到顶部">↑</button>
+
+  <!-- 灯箱 · 点击 Gallery 图片放大查看 -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="图片放大查看">
+    <button class="lightbox-close" aria-label="关闭">×</button>
+    <img class="lightbox-img" src="" alt="">
+    <div class="lightbox-cap"></div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
